@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewBag.Title = "Отчётность";
+}
+
+@Html.Partial("_Navbar")
+<div class="panel-header panel-header-lg">
+    <canvas id="bigDashboardChart"></canvas>
+</div>
+<div class="content">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card card-chart">
+                <div class="card-header">
+                    <h5 class="card-category">За все время</h5>
+                    <h4 class="card-title">Все товары</h4>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
+                            <i class="now-ui-icons loader_gear"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item text-danger" href="#">Remove Data</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="lineChartExample"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="now-ui-icons arrows-1_refresh-69"></i> Обновлено только что
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-chart">
+                <div class="card-header">
+                    <h5 class="card-category">2018г.</h5>
+                    <h4 class="card-title">Все товары</h4>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
+                            <i class="now-ui-icons loader_gear"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item text-danger" href="#">Remove Data</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="now-ui-icons arrows-1_refresh-69"></i> Обновлено только что
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-chart">
+                <div class="card-header">
+                    <h5 class="card-category">Персонал</h5>
+                    <h4 class="card-title">Реализация товара</h4>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="barChartSimpleGradientsNumbers"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="now-ui-icons ui-2_time-alarm"></i> За последние 7 дней
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-tasks">
+                <div class="card-header">
+                    <h5 class="card-category">Запланированные мероприятия</h5>
+                    <h4 class="card-title">Задачи</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-full-width table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" checked="">
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="text-left">Провести опрос у покупателей "Какие аптеки наиболее интересны потребителям?"</td>
+                                    <td class="td-actions text-right">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                            <i class="now-ui-icons ui-2_settings-90"></i>
+                                        </button>
+                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox">
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="text-left">Провести тренинг по общению с клиентами</td>
+                                    <td class="td-actions text-right">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                            <i class="now-ui-icons ui-2_settings-90"></i>
+                                        </button>
+                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" checked="">
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        Провести проверку пожарной безопасности
+                                    </td>
+                                    <td class="td-actions text-right">
+                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                            <i class="now-ui-icons ui-2_settings-90"></i>
+                                        </button>
+                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <hr>
+                    <div class="stats">
+                        <i class="now-ui-icons loader_refresh spin"></i> Обновлено 3 минуты назад
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-category">Персонал</h5>
+                    <h4 class="card-title"> Продажи персонала</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                Сотрудник
+                            </th>
+                            <th class="text-right">
+                                Объём
+                            </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Шевченко Галина Петровна
+                                    </td>
+                                    <td class="text-right">
+                                        10057,44₽
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Радионова Лариса Сергеевна
+                                    </td>
+                                    <td class="text-right">
+                                        8064,89₽
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Валентинов Игорь Михайлович
+                                    </td>
+                                    <td class="text-right">
+                                        12081,02₽
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Новикова Галина Семеновна
+                                    </td>
+                                    <td class="text-right">
+                                        9001,77₽
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Потоцкий Дмитрий Сергеевич
+                                    </td>
+                                    <td class="text-right">
+                                        13227,52₽
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Sun Pharmaceutical Industries Ltd.
+        </div>
+    </div>
+</footer>
+
+
+@section Scripts {
+    <script>
+        $(function () {
+            $(".active").removeClass("active");
+            $("#reporting").addClass("active");
+        });
+    </script>
+}

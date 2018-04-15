@@ -1,0 +1,53 @@
+﻿<div class="sidebar" data-color="orange">
+    <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+    <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+            СФ
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            Сан-Фарма
+        </a>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li id="selectSupplier">
+                <a href="@Url.Action("SelectSupplier")">
+                    <i class="now-ui-icons design_bullet-list-67"></i>
+                    <p>Выбрать поставщика</p>
+                </a>
+            </li>
+            <li id="addOrder">
+                <a href="@Url.Action("AddOrder")">
+                    <i class="now-ui-icons files_box"></i>
+                    <p>Сделать заказ</p>
+                </a>
+            </li>
+            <li id="ordersInfo">
+                <a href="@Url.Action("OrdersInfo")">
+                    <i class="now-ui-icons health_ambulance"></i>
+                    <p>Отслеживание заказов</p>
+                </a>
+            </li>
+            <li id="ordersHistory">
+                <a href="@Url.Action("OrdersHistory")">
+                    <i class="now-ui-icons files_paper"></i>
+                    <p>История заказов</p>
+                </a>
+            </li>
+            <li id="reporting">
+                <a href="@Url.Action("Reporting")">
+                    <i class="now-ui-icons business_chart-bar-32"></i>
+                    <p>Отчётность</p>
+                </a>
+            </li>
+            <li class="active-pro">
+                <a href="#">
+                    <i class="now-ui-icons sport_user-run"></i>
+                    <p>Выйти</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

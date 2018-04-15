@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewBag.Title = "Отслеживание заказа";
+}
+
+@Html.Partial("_Navbar")
+<div class="panel-header panel-header-sm">
+</div>
+
+<div class="content">
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">ООО "Фармсервис"</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата составления накладной</label>
+                                    <div>
+                                        05.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label># накладной</label>
+                                    <div>
+                                        # 1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата отправления</label>
+                                    <div>
+                                        06.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Номер водителя</label>
+                                    <div>
+                                        8 (918) 353-66-51
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата доставки</label>
+                                    <div>
+                                        07.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">ООО "Русская тройка"</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата составления накладной</label>
+                                    <div>
+                                        10.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label># накладной</label>
+                                    <div>
+                                        # 2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата отправления</label>
+                                    <div>
+                                        11.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Номер водителя</label>
+                                    <div>
+                                        8 (961) 554-89-14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Дата доставки</label>
+                                    <div>
+                                        12.04.2018г.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Sun Pharmaceutical Industries Ltd.
+        </div>
+    </div>
+</footer>
+
+
+@section Scripts {
+    <script>
+        $(function () {
+            $(".active").removeClass("active");
+            $("#ordersInfo").addClass("active");
+        });
+    </script>
+}

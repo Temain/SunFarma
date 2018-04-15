@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "История заказов";
+}
+
+@Html.Partial("_Navbar")
+<div class="panel-header panel-header-sm">
+</div>
+
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> Аптека #10</h4>
+                    <small>г. Новороссийск, пр. Дзержинского 196</small>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="text-primary">
+                            <th>
+                                Поставщик
+                            </th>
+                            <th>
+                                Дата заказа
+                            </th>
+                            <th class="text-center">
+                                Дата поставки
+                            </th>
+                            <th class="text-center">
+                                Сумма, руб.
+                            </th>
+                            <th class="text-center">
+                                Накладная, #
+                            </th>
+                            <th class="text-right">
+                                Документ
+                            </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ООО "Фармсервис"
+                                    </td>
+                                    <td>
+                                        05.04.2018г.
+                                    </td>
+                                    <td class="text-center">
+                                        07.04.2018г.
+                                    </td>
+                                    <td class="text-center">
+                                        30 057,41₽
+                                    </td>
+                                    <td class="text-center">
+                                        # 1
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="#"><i class="now-ui-icons arrows-1_cloud-download-93"></i> Скачать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ООО "Русская тройка"
+                                    </td>
+                                    <td>
+                                        10.04.2018г.
+                                    </td>
+                                    <td class="text-center">
+                                        12.04.2018г.
+                                    </td>
+                                    <td class="text-center">
+                                        28 955,98₽
+                                    </td>
+                                    <td class="text-center">
+                                        # 2
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="#"><i class="now-ui-icons arrows-1_cloud-download-93"></i> Скачать</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Sun Pharmaceutical Industries Ltd.
+        </div>
+    </div>
+</footer>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $(".active").removeClass("active");
+            $("#ordersHistory").addClass("active");
+        });
+    </script>
+}
