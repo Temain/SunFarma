@@ -207,7 +207,7 @@
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: ["ЯНВ", "ФЕВ", "МАРТ", "АПР", "МАЙ", "ИЮНЬ", "ИЮЛЬ", "АВГ", "СЕНТ", "ОКТ", "НОЯБ", "ДЕК"],
+              labels: ["ЯНВ", "ФЕВ", "МАРТ", "АПР", "МАЙ"/* , "ИЮНЬ", "ИЮЛЬ", "АВГ", "СЕНТ", "ОКТ", "НОЯБ", "ДЕК" */],
               datasets: [{
                   label: "Data",
                   borderColor: chartColor,
@@ -222,7 +222,7 @@
                   fill: true,
                   backgroundColor: gradientFill,
                   borderWidth: 2,
-                  data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+                  data: [50, 150, 100, 190, 130/*, 90, 150, 160, 120, 140, 190, 95*/]
               }]
           },
           options: {
@@ -298,26 +298,27 @@
       gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.40)");
 
       myChart = new Chart(ctx, {
-          type: 'line',
+          type: 'pie',
           responsive: true,
           data: {
-              labels: ["Янв", "Фев", "Март", "Апр", "Май", "Июнь", "Июль", "Авг", "Сент", "Окт", "Нояб", "Дек"],
+              labels: ["Русская тройка", "Фармсервис", "Фармкомплект", "Катрен"],
               datasets: [{
-                  label: "Active Users",
-                  borderColor: "#f96332",
-                  pointBorderColor: "#FFF",
-                  pointBackgroundColor: "#f96332",
-                  pointBorderWidth: 2,
-                  pointHoverRadius: 4,
-                  pointHoverBorderWidth: 1,
-                  pointRadius: 4,
-                  fill: true,
-                  backgroundColor: gradientFill,
-                  borderWidth: 2,
-                  data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+                  label: "Объем заказов:",
+                  backgroundColor: ["#3e95cd", "#8e5ea2", "#e8c3b9", "#c45850"],
+                  //borderColor: "#f96332",
+                  //pointBorderColor: "#FFF",
+                  //pointBackgroundColor: "#f96332",
+                  //pointBorderWidth: 2,
+                  //pointHoverRadius: 4,
+                  //pointHoverBorderWidth: 1,
+                  //pointRadius: 4,
+                  //fill: true,
+                  // backgroundColor: gradientFill,
+                  // borderWidth: 2,
+                  data: [542, 480, 550, 530]
               }]
           },
-          options: gradientChartOptionsConfiguration
+          // options: gradientChartOptionsConfiguration
       });
 
 
@@ -331,27 +332,45 @@
       gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
       gradientFill.addColorStop(1, hexToRGB('#18ce0f',0.4));
 
+      //myChart = new Chart(ctx, {
+      //    type: 'line',
+      //    responsive: true,
+      //    data: {
+      //        labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
+      //        datasets: [{
+      //            label: "Email Stats",
+      //            borderColor: "#18ce0f",
+      //            pointBorderColor: "#FFF",
+      //            pointBackgroundColor: "#18ce0f",
+      //            pointBorderWidth: 2,
+      //            pointHoverRadius: 4,
+      //            pointHoverBorderWidth: 1,
+      //            pointRadius: 4,
+      //            fill: true,
+      //            backgroundColor: gradientFill,
+      //            borderWidth: 2,
+      //            data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+      //        }]
+      //    },
+      //    options: gradientChartOptionsConfigurationWithNumbersAndGrid
+      //});
+
       myChart = new Chart(ctx, {
-          type: 'line',
-          responsive: true,
+          type: 'pie',
           data: {
-              labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
+              labels: ["Русская тройка", "Фармсервис", "Фармкомплект", "Катрен"],
               datasets: [{
-                  label: "Email Stats",
-                  borderColor: "#18ce0f",
-                  pointBorderColor: "#FFF",
-                  pointBackgroundColor: "#18ce0f",
-                  pointBorderWidth: 2,
-                  pointHoverRadius: 4,
-                  pointHoverBorderWidth: 1,
-                  pointRadius: 4,
-                  fill: true,
-                  backgroundColor: gradientFill,
-                  borderWidth: 2,
-                  data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+                  label: "Степень:",
+                  backgroundColor: ["#3e95cd", "#8e5ea2", "#e8c3b9", "#c45850"],
+                  data: [2478, 5267, 784, 433]
               }]
           },
-          options: gradientChartOptionsConfigurationWithNumbersAndGrid
+          //options: {
+          //    title: {
+          //        display: true,
+          //        text: 'Predicted world population (millions) in 2050'
+          //    }
+          //}
       });
 
       var e = document.getElementById("barChartSimpleGradientsNumbers").getContext("2d");
