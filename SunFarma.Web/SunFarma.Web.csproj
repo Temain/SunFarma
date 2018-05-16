@@ -195,10 +195,34 @@
     <Compile Include="Migrations\201804152121056_Init.Designer.cs">
       <DependentUpon>201804152121056_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805162133442_Init2.cs" />
+    <Compile Include="Migrations\201805162133442_Init2.Designer.cs">
+      <DependentUpon>201805162133442_Init2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805162137309_Init3.cs" />
+    <Compile Include="Migrations\201805162137309_Init3.Designer.cs">
+      <DependentUpon>201805162137309_Init3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805162143590_Init4.cs" />
+    <Compile Include="Migrations\201805162143590_Init4.Designer.cs">
+      <DependentUpon>201805162143590_Init4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Area.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Country.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Price.cs" />
+    <Compile Include="Models\PriceReestr.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Street.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\Waybill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -438,6 +462,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804152121056_Init.resx">
       <DependentUpon>201804152121056_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805162133442_Init2.resx">
+      <DependentUpon>201805162133442_Init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805162137309_Init3.resx">
+      <DependentUpon>201805162137309_Init3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805162143590_Init4.resx">
+      <DependentUpon>201805162143590_Init4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

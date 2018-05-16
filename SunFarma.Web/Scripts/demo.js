@@ -209,7 +209,7 @@
           data: {
               labels: ["ЯНВ", "ФЕВ", "МАРТ", "АПР", "МАЙ"/* , "ИЮНЬ", "ИЮЛЬ", "АВГ", "СЕНТ", "ОКТ", "НОЯБ", "ДЕК" */],
               datasets: [{
-                  label: "Data",
+                  label: "Объём заказов, тыс. руб.:",
                   borderColor: chartColor,
                   pointBorderColor: chartColor,
                   pointBackgroundColor: "#1e3d60",
