@@ -318,6 +318,13 @@
                   data: [542, 480, 550, 530]
               }]
           },
+          options: {
+              pieceLabel: {
+                  render: 'percentage',
+                  fontColor: 'white',
+                  precision: 2
+              }
+          }
           // options: gradientChartOptionsConfiguration
       });
 
@@ -365,6 +372,13 @@
                   data: [2478, 5267, 784, 433]
               }]
           },
+          options: {
+              pieceLabel: {
+                  render: 'percentage',
+                  fontColor: 'white',
+                  precision: 2
+              }
+          }
           //options: {
           //    title: {
           //        display: true,

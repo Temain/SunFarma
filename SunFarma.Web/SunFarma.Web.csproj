@@ -295,6 +295,7 @@
     <Content Include="fonts\nucleo-outline.woff" />
     <Content Include="fonts\nucleo-outline.woff2" />
     <Content Include="Scripts\chartjs.min.js" />
+    <Content Include="Scripts\chartjs.piecelabel.js" />
     <Content Include="Scripts\demo.js" />
     <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
