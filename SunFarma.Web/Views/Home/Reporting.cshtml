@@ -15,16 +15,16 @@
                     <h5 class="card-category">Заказы</h5>
                     <h4 class="card-title">По поставщикам</h4>
                     @*<div class="dropdown">
-                        <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                            <i class="now-ui-icons loader_gear"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item text-danger" href="#">Remove Data</a>
-                        </div>
-                    </div>*@
+                            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
+                                <i class="now-ui-icons loader_gear"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item text-danger" href="#">Remove Data</a>
+                            </div>
+                        </div>*@
                 </div>
                 <div class="card-body">
                     <div class="chart-area" style="height: auto;">
@@ -44,19 +44,19 @@
                     <h5 class="card-category">Поставщики</h5>
                     <h4 class="card-title">По рейтингу товаров</h4>
                     @*<div class="dropdown">
-                        <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                            <i class="now-ui-icons loader_gear"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item text-danger" href="#">Remove Data</a>
-                        </div>
-                    </div>*@
+                            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
+                                <i class="now-ui-icons loader_gear"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item text-danger" href="#">Remove Data</a>
+                            </div>
+                        </div>*@
                 </div>
                 <div class="card-body">
-                    <div class="chart-area"  style="height: auto;">
+                    <div class="chart-area" style="height: auto;">
                         <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
                     </div>
                 </div>
@@ -68,23 +68,167 @@
             </div>
         </div>
         @*<div class="col-lg-4 col-md-6">
-            <div class="card card-chart">
-                <div class="card-header">
-                    <h5 class="card-category">Персонал</h5>
-                    <h4 class="card-title">Реализация товара</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area">
-                        <canvas id="barChartSimpleGradientsNumbers"></canvas>
+                <div class="card card-chart">
+                    <div class="card-header">
+                        <h5 class="card-category">Персонал</h5>
+                        <h4 class="card-title">Реализация товара</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-area">
+                            <canvas id="barChartSimpleGradientsNumbers"></canvas>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="now-ui-icons ui-2_time-alarm"></i> За последние 7 дней
+                        </div>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <i class="now-ui-icons ui-2_time-alarm"></i> За последние 7 дней
+            </div>*@
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-category">Заказы</h5>
+                    <h4 class="card-title"> По поставщикам</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                Поставщик
+                            </th>
+                            <th>
+                                Кол-во, шт.
+                            </th>
+                            <th class="text-right">
+                                Процент, %
+                            </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Русская тройка
+                                    </td>
+                                    <td>
+                                        542
+                                    </td>
+                                    <td class="text-right">
+                                        25.78
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Фармсервис
+                                    </td>
+                                    <td>
+                                        480
+                                    </td>
+                                    <td class="text-right">
+                                        22.84
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Фармкомплект
+                                    </td>
+                                    <td>
+                                        550
+                                    </td>
+                                    <td class="text-right">
+                                        26.17
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Катрен
+                                    </td>
+                                    <td>
+                                        530
+                                    </td>
+                                    <td class="text-right">
+                                        25.21
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </div>*@
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-category">Поставщики</h5>
+                    <h4 class="card-title"> По рейтингу товаров</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                Поставщик
+                            </th>
+                            <th>
+                                Лид. позиций, шт.
+                            </th>
+                            <th class="text-right">
+                                Процент, %
+                            </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Русская тройка
+                                    </td>
+                                    <td>
+                                        2478
+                                    </td>
+                                    <td class="text-right">
+                                        27.65
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Фармсервис
+                                    </td>
+                                    <td>
+                                        5267
+                                    </td>
+                                    <td class="text-right">
+                                        58.77
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Фармкомплект
+                                    </td>
+                                    <td>
+                                        784
+                                    </td>
+                                    <td class="text-right">
+                                        8.74
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Катрен
+                                    </td>
+                                    <td>
+                                        433
+                                    </td>
+                                    <td class="text-right">
+                                        4.83
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-6">
